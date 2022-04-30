@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Team A"
+                android:textAlignment="center"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/calcButtonTextSize">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:paddingTop="50dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="50dp"
+                android:id="@+id/AResultTextView"></TextView>
+
+            <Button
+                android:id="@+id/plus3button1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:onClick="plus3AOnClick"
+                android:text="+3" />
+            <Button
+                android:id="@+id/plus2button1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:onClick="plus2AOnClick"
+                android:text="+2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Team B"
+                android:textAlignment="center"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/calcButtonTextSize">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:paddingTop="50dp"
+                android:textSize="50dp"
+                android:id="@+id/BResultTextView">
+            </TextView>
+            <Button
+                android:id="@+id/plus3button2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:onClick="plus3BOnClick"
+                android:text="+3" />
+            <Button
+                android:id="@+id/plus2button2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/calcButtonTextSize"
+                android:onClick="plus2BOnClick"
+                android:text="+2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Reset"
+        android:textSize="30dp"
+        android:id="@+id/resetButton"
+        android:onClick="resetButtonOnClick">
+    </Button>
+</LinearLayout>
