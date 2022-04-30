@@ -21,12 +21,7 @@ public class MainActivity extends AppCompatActivity {
        // setContentView(R.layout.court_counter);
         initTextViews();
     }
-    private void initTextViews() {
-        workingTV = findViewById(R.id.workingTextView);
-        resultTV = findViewById(R.id.resultTextView);
-        resultA = findViewById(R.id.AResultTextView);
-        resultB = findViewById(R.id.BResultTextView);
-    }
+
     private void setWorking(String givenValue){
         working = working + givenValue;
         workingTV.setText(working);
